@@ -1,7 +1,7 @@
 # Ex.08 Design of Interactive Image Gallery
 ## Date:7/5/2025
-## Name:Dhivya Dharshini B
-## Reg No:212223240031
+## Name: SYED HUZAIF
+## Reg No:212224240166
 
 ## AIM:
 To design a web application for an inteactive image gallery with minimum five images.
