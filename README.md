@@ -1,8 +1,8 @@
-## Ex.08 Design of Interactive Image Gallery
-## NAME= SYED HUZAIF
-## REG-NO= 212224240166
-## Date:
-07/05/2025
+# Ex.08 Design of Interactive Image Gallery
+## Date:7/5/2025
+## Name: SYED HUZAIF
+## Reg No: 212224240166
+
 ## AIM:
 To design a web application for an inteactive image gallery with minimum five images.
 
@@ -27,6 +27,7 @@ Validate the HTML and CSS code.
 Publish the website in the given URL.
 
 ## PROGRAM :
+## HTML
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -37,21 +38,21 @@ Publish the website in the given URL.
 </head>
 <body>
     <header style="text-align: center; background-color: #333; color: white; padding: 1rem 0;">
-        <h1>BOXING</h1>
+        <h1>Actor Vijay</h1>
     </header>
 
     <div style="white-space: nowrap; overflow-x: auto; padding: 1rem;">
         <div style="display: inline-block; margin-right: 10px;" onclick="openModal(this)">
-            <img src="img1.png" style="height: 200px;">
+            <img src="kandangi.jpg" style="height: 200px;">
         </div>
         <div style="display: inline-block; margin-right: 10px;" onclick="openModal(this)">
-            <img src="img2.png" style="height: 200px;">
+            <img src="jilla.jpg" style="height: 200px;">
         </div>
         <div style="display: inline-block; margin-right: 10px;" onclick="openModal(this)">
-            <img src="img3.png" style="height: 200px;">
+            <img src="bairava.jpg" style="height: 200px;">
         </div>
         <div style="display: inline-block;" onclick="openModal(this)">
-            <img src="img4.png" style="height: 200px;">
+            <img src="vj.jpg" style="height: 200px;">
         </div>
     </div>
 
@@ -75,8 +76,25 @@ Publish the website in the given URL.
 </body>
 </html>
 ```
+## JS
+```
+function openModal(element) {
+    const modal = document.getElementById("modal");
+    const modalImage = document.getElementById("modalImage");
+    const caption = document.getElementById("caption");
 
+    modal.style.display = "flex";
+    modalImage.src = element.querySelector("img").src;
+    caption.textContent = element.querySelector("img").alt;
+}
+
+function closeModal() {
+    const modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
+```
 ## OUTPUT:
-![alt text](image.png)
+![alt text](<Screenshot 2025-05-07 110516.png>)
+![alt text](<Screenshot 2025-05-07 110552.png>)
 ## RESULT:
 The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
